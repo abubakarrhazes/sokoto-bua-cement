@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Sokoto Cement  Company Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+   <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="icon" href="images/logo.jpeg" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="css/overwrite.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/parallax.min.js"></script>
+  <script src="js/wow.min.js"></script>
+  <script src="js/jquery.easing.min.js"></script>
+  <script type="text/javascript" src="js/fliplightbox.min.js"></script>
+  <script src="js/functions.js"></script>
+  <style>
+  body {
+      font: 400 15px Lato, sans-serif;
+      line-height: 1.8;
+      color: #818181;
+  }
+  h2 {
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #303030;
+      font-weight: 600;
+      margin-bottom: 30px;
+  }
+  h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 30px;
+  }  
+  .jumbotron {
+      background-color: #f4511e;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Montserrat, sans-serif;
+  }
+  .container-fluid {
+      padding: 60px 50px;
+  }
+  .bg-grey {
+      background-color: #f6f6f6;
+  }
+  .logo-small {
+      color: #f4511e;
+      font-size: 50px;
+  }
+  .logo {
+      color: #f4511e;
+      font-size: 200px;
+  }
+  .thumbnail {
+      padding: 0 0 15px 0;
+      border: none;
+      border-radius: 0;
+  }
+  .thumbnail img {
+      width: 100%;
+      height: 100%;
+      margin-bottom: 10px;
+  }
+  .carousel-control.right, .carousel-control.left {
+      background-image: none;
+      color: #f4511e;
+  }
+  .carousel-indicators li {
+      border-color: #f4511e;
+  }
+  .carousel-indicators li.active {
+      background-color: #f4511e;
+  }
+  .item h4 {
+      font-size: 19px;
+      line-height: 1.375em;
+      font-weight: 400;
+      font-style: italic;
+      margin: 70px 0;
+  }
+  .item span {
+      font-style: normal;
+  }
+  .panel {
+      border: 1px solid #f4511e; 
+      border-radius:0 !important;
+      transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer .btn:hover {
+      border: 1px solid #f4511e;
+      background-color: #fff !important;
+      color: #f4511e;
+  }
+  .panel-heading {
+      color: #fff !important;
+      background-color: #f4511e !important;
+      padding: 25px;
+      border-bottom: 1px solid transparent;
+      border-top-left-radius: 0px;
+      border-top-right-radius: 0px;
+      border-bottom-left-radius: 0px;
+      border-bottom-right-radius: 0px;
+  }
+  .panel-footer {
+      background-color: white !important;
+  }
+  .panel-footer h3 {
+      font-size: 32px;
+  }
+  .panel-footer h4 {
+      color: #aaa;
+      font-size: 14px;
+  }
+  .panel-footer .btn {
+      margin: 15px 0;
+      background-color: #f4511e;
+      color: #fff;
+  }
+  .navbar {
+      margin-bottom: 0;
+      background-color: #f4511e;
+      z-index: 9999;
+      border: 0;
+      font-size: 12px !important;
+      line-height: 1.42857143 !important;
+      letter-spacing: 4px;
+      border-radius: 0;
+      font-family: Montserrat, sans-serif;
+  }
+  .navbar li a, .navbar .navbar-brand {
+      color: #fff !important;
+  }
+  .navbar-nav li a:hover, .navbar-nav li.active a {
+      color: #f4511e !important;
+      background-color: #fff !important;
+  }
+  .navbar-default .navbar-toggle {
+      border-color: transparent;
+      color: #fff !important;
+  }
+  footer .glyphicon {
+      font-size: 20px;
+      margin-bottom: 20px;
+      color: #f4511e;
+  }
+  .slideanim {visibility:hidden;}
+  .slide {
+      animation-name: slide;
+      -webkit-animation-name: slide;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+  }
+  @keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @-webkit-keyframes slide {
+    0% {
+      opacity: 0;
+      -webkit-transform: translateY(70%);
+    } 
+    100% {
+      opacity: 1;
+      -webkit-transform: translateY(0%);
+    }
+  }
+  @media screen and (max-width: 768px) {
+    .col-sm-4 {
+      text-align: center;
+      margin: 25px 0;
+    }
+    .btn-lg {
+        width: 100%;
+        margin-bottom: 35px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .logo {
+        font-size: 150px;
+    }
+  }
+  </style>
+</head>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="home.html"> Sokoto Cement </a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#services">SERVICES</a></li>
+        <li><a href="#portfolio">PORTFOLIO</a></li>
+        <li><a href="board.html">BOARD OF DIRECTOR</a></li>
+        <li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="board" class="container-fluid bg-grey">
+  <h2 class="text-center">Board Of Directors</h2>
+  <div class="row text-center">
+      <div class="col-md-4">
+        <img  src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim">
+        <h2>Alhaji (Dr.) Abdulsamad Rabiu, CON. (Chairman):</h2>
+        <p><strong>Alhaji (Dr) Abdulsamad Rabiu CON, Nigerian, had his early education at Federal Government College, Kano after he proceeded to the United States to study Economics in the Capital university Columbus, Ohio, United States of America.
+He is the founder, Chairman and the Chief Executive Officer of BUA Group of Companies which he established in 1988 as a trading company engaged in the importation and marketing iron, steel agricultural materials as well as industrial chemicals. The BUA Group under the management of Alhaji Abdulsamad Rabiu acquired some public enterprises previously owned by the Federal Government of Nigeria via a competitive bidding process conducted by the Bureau of Public Enterprises. Some of the bids won were the concession rights to the Port Harcourt Ports which was later renamed BUA Port & Terminals Limited and Lafiagi Sugar Company in Kwara State.
+
+He is also the Chairman of BUA Sugar Refinery Limited, BUA Flour Mills in Lagos and Kano, Nigeria Oil Mills Limited, Lagos. In addition his Company BUA International Limited acquired Damnaz Cement Company Limited through which he holds stakes in Cement Company of Nigeria PLC Sokoto and Edo Cement Company Limited Okpella, in 2009. Alhaji Abdulsamad Rabiu served as the Chairman of Bank of Industry and also sits on the board of several other notable companies. He became the Chairman of Cement Company of Northern Nigeria PLC on February 2, 2010</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Engr. Yusuf Haliru Binji (Managing Director /CEO )</h2>
+        <p><strong>Engr Yusuf Haliru Binj, was born in 1968, in Kaduna, Kaduna state. A chemical Engineer with degrees from Ahmadu Bello University and the University College, London, Engr Yusuf Binji is a Fellow of the Nigerian Society of Engineers, the Solar Energy Society of Nigeria and the Nigerian Society of Chemical Engineers. He is also a registered Engineer with the Council for the Regulation of Engineering in Nigeria (COREN) and an Associate Member of the Institution of Chemical Engineers, UK. Yusuf Binji started his career in the cement industry with CCNN working across various departments before he rose through the ranks to become an Executive Director, Technical. He later joined BUA where he held various positions as Executive Director, Cement Porjects/Technical within the Group from 2013 to 2014 and Executive Director, Technical, BUA Obu Cement Company from 2014 to 2017. He was appointed as Managing Director, Obu Cement Company in 2017 and has held other roles including Board Member, Sokoto Energy Research Centre, Energy Commission of Nigeria (2002 – 2013).
+An alumnus of the International Directors Programme at INSEAD, France, Yusuf Binji has attended various professional and management courses in Nigeria, Switzerland, Germany, Norway, South Africa amongst others. He speaks regularly at conferences across the world. Engr Yusuf is happily married and has children.</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Mr. Kenneth Chimaobi Madukwe ( Director)</h2>
+        <p><strong>Chimaobi Madukwe obtained a Bachelor's Degree in Management Studies (Accountancy) in 1984 from University of Jos. He also obtained a Master's degree in Bussiness Administration( MBA Finance) from ESUTH Business School in 1990. Before joining BUA Group in 2004, He was head of Corporate Finance in the Citizens International Bank Plc where he worked from 1999 to 2004. He also worked as a consultant at PBTG Consulting between January and June 1999. He is currently the Group Chief Operating Officer ( GCOO) of BUA Group.
+
+He sits on the board of BUA International Limited, BUA Sugar Refinary Limited and Cement Company of Northen Nigeria PLC. He has attended several top management courses locally and abroad. He was appointed as a Director on February 2, 2010 to represent Damnaz Cement Company Limited (a subsidiary of BUA Group) on the Board of Cement Company of Northern Nigeria PLC.</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive" width="250" height="250">
+      </div> 
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Alhaji Kabiru Isyaku Rabiu (Director)</h2>
+        <p><strong>Kabiru Isyaku Rabiu, Nigerian, obtained his MBA International Business from American Intercontinental University, London England in 2002.   He joined Nigerian Oil Mills Limited owned by BUA Group in 2002 as Assistant General Manager and was promoted to the post of General Manager in 2005. He is currently the Group Executive Director of BUA Group He has attended several courses within and outside Nigeria. He was appointed as a Director on February 16, 2010 to represent Damnaz Cement Company Limited (a subsidiary of BUA Group) on the Board of Cement Company of Northern Nigeria PLC.</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Mr. Finn Arnoldsen (Director)</h2>
+        <p><strong>Finn Arnoldsen, Norwegian, was born in 1954 has a Master of Science in Mechanical Engineering in 1977 from NTH Norway and has also attended a Senior Management Development course in INSEAD, France in 2004.
+Mr. Arnoldsen has extensive work experience since 1977 to date, most of which has been in the Cement Industry traversing several countries in Europe and Africa. He was once the Executive Director Sales and Marketing of CCNN Plc and is currently the MD/CE of Edo Cement Company Ltd. (a Subsidiary of Bua Group.) He was appointed as a Director on May 22,2014 to represent Damnaz Cement Company Limited (a subsidiary of BUA Group) on the Board of Cement Company Of Northern Nigeria PLC.</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Alhaji Abubakar Magaji (Independent Director)</h2>
+        <p><strong>Abubakar Magaji Esq.,Nigearian, holds a Bachelor of Law degree from Ahmadu Bello University, Zaria in 1984 and he qualified as a Lawyer and was called to the Bar in 1985. Mr. Magaji had an extensive working career spanning over two decades and he retired from the Cement Company of Northern Nigeria Plc as General Manger/Company Secretary in the year 2000 to establish his private Legal Practice firm. He also worked as outsourced Company Secretary for CCNN before he finally resigned in 2013. He has attended many courses both at home and abroad in the course of his career and is a member of the Nigerian Bar Association. Mr. Magaji was appointed into the Board of CCNN Plc on the 14th May, 2015 as an Independent Director.</strong></p>
+      </div>
+    </div>
+    <div class="row text-center">
+        <div class="col-md-4">
+        <img src="images/director.jpeg" class="img-circle" class="img-responsive"  width="250" height="250">
+      </div>
+      <div class="col-md-8 text-center slideanim"> 
+        <h2>Alhaji Shehu Abubakar (Independent Director)</h2>
+        <p><strong>Shehu Abubakar Holds a B.Sc. (Business Management) from Usman Danfodio University, Sokoto in 1984 and an MBA from Ahmadu Bello University, Zaria in 2011. Alhaji Abubakar had an extensive working career in the Banking Industry from 1987 to 2017 where he retired as Executive Director of Keystone Bank Limited after putting in about 29 years in the Industry. He was also at different times a Director on the Boards Global Bank of Liberia and KBL Health Care Limited. Alhaji Shehu Abubakar has attended many courses in the course of his career within and outside Nigeria at the Lagos Business School, Harvard Business School, Columbia Business School and Wharton Business School among others. Alhaji Abubakar has a wide range of experience in Strategy, Leadership and Executive Management, Customer Relations and Management and Corporate Finance among other things. Alhaji Shehu Abubakar was appointed as an Independent Director on the Board of CCNN PLC on July 12, 2018.</strong></p>
+      </div>
+    </div>
+  </div>
+<div id="contact" class="container-fluid bg-grey">
+  <h2 class="text-center">CONTACT</h2>
+  <div class="row">
+    <div class="col-sm-5">
+      <p>Contact us and we'll get back to you within 24 hours.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span> Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span> +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> myemail@something.com</p>
+    </div>
+    <div class="col-sm-7 slideanim">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
+      <div class="row">
+        <div class="col-sm-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div id="googleMap" style="height:400px;width:100%;"></div>
+
+<!-- Add Google Maps -->
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+var myCenter = new google.maps.LatLng(13.0269, 5.2268);
+
+function initialize() {
+var mapProp = {
+  center:myCenter,
+  zoom:12,
+  scrollwheel:false,
+  draggable:false,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+
+var marker = new google.maps.Marker({
+  position:myCenter,
+  });
+
+marker.setMap(map);
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+
+<footer class="container-fluid text-center">
+  <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+  </a>
+   <div class="social-icon">
+      <div class="container">
+        <div class="col-md-6 col-md-offset-3">
+          <ul class="social-network">
+            <li><a href="#" class="fb tool-tip" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+            <li><a href="#" class="twitter tool-tip" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+            <li><a href="#" class="gplus tool-tip" title="Google Plus"><i class="fa fa-google-plus"></i></a></li>
+            <li><a href="#" class="linkedin tool-tip" title="Linkedin"><i class="fa fa-linkedin"></i></a></li>
+            <li><a href="#" class="ytube tool-tip" title="You Tube"><i class="fa fa-youtube-play"></i></a></li>
+            <li><a href="#" class="dribbble tool-tip" title="Dribbble"><i class="fa fa-dribbble"></i></a></li>
+            <li><a href="#" class="pinterest tool-tip" title="Pinterest"><i class="fa fa-pinterest-square"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  <p>Created And Maintained Alrhazes Tech Hub &copy Sokoto Cement Company <a href="../index.html" title="Visit w3schools">www.sokotocementcompany.com</a></p>
+</footer>
+
+<script>
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    // Make sure this.hash has a value before overriding default behavior
+    if (this.hash !== "") {
+      // Prevent default anchor click behavior
+      event.preventDefault();
+
+      // Store hash
+      var hash = this.hash;
+
+      // Using jQuery's animate() method to add smooth page scroll
+      // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 900, function(){
+   
+        // Add hash (#) to URL when done scrolling (default click behavior)
+        window.location.hash = hash;
+      });
+    } // End if
+  });
+  
+  $(window).scroll(function() {
+    $(".slideanim").each(function(){
+      var pos = $(this).offset().top;
+
+      var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+          $(this).addClass("slide");
+        }
+    });
+  });
+})
+</script>
+
+</body>
+
+<!-- Mirrored from www.w3schools.com/bootstrap/tryit.asp?filename=trybs_theme_company_complete_animation by HTTrack Website Copier/3.x [XR&CO'2014], Mon, 23 May 2016 12:14:46 GMT -->
+</html>
